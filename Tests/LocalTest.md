@@ -12,6 +12,12 @@
 
 	4. Deletes the original .log file after successful compression.
 
+## Important!
+
+- Verify first that the [LocalTest.py](LocalTest.py) script is working in your OS.
+
+- Once the test output is valid you can go ahead and use the [Lambda_Function.py](Lambda_Function.py).
+
 - How It Works?
 
 	1. Directory Listing:
