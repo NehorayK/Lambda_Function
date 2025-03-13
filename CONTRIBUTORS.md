@@ -1,4 +1,4 @@
-# Contributor
+## Contributors 
 
 - **Name:** [Nehoray Kanizo](https://github.com/NehorayK)
 
