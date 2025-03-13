@@ -86,11 +86,11 @@ This script automates the process of **compressing** and **renaming** log files 
 
 2.  **Update Your Settings**:
 
--  **Bucket Name**: Replace `<Your_Bucket_Name>` with the name of your S3 bucket.
+-  **Bucket Name**: Replace `<"Your_Bucket_Name">` with the name of your S3 bucket.
 
--  **Regex Pattern**: Adjust the regex (`.*\.log$`) if you need to target different file types.
+-  **Regex Pattern**: Adjust the regex `".*\.log$"` if you need to target different file types.
 
--  **Vendor Prefix**: Update the prefix check (`"1234567"`) in the script to match your Incapsula Account/Tenant ID.
+-  **Vendor Prefix**: Update the prefix check `"1234567"` in the script to match your Incapsula Account/Tenant ID.
 
 >Modify the **prefix** if using the script for another vendor.
 
