@@ -1,7 +1,7 @@
 
 # Testing The Function:
 
-- To test the function in the Lambda Editor, insert your **bucket name**and **object key** to simulate an S3-triggered Lambda event.
+- To test the function in the Lambda Editor, insert your **bucket name** and **object key** to simulate an S3-triggered Lambda event.
 
 - Sample Input:
 ```
