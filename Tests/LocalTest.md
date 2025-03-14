@@ -24,13 +24,15 @@
 
 1. **Directory Listing:**
 	The script uses os.listdir() to iterate over all files in the specified local directory.
+(in the main script handled with `s3_client.list_objects_v2()` to list all objects in your bucket.
 
 2. **File Filtering:**
 	It processes only files that have a `.log` extension.
+(same as in the main script - using **re** python library).
 
 3. **Timestamp Generation:**
 	A timestamp is generated using `datetime.utcnow().strftime('%Y-%m-%dT%H_%M_%S')`
-	(UTC time in ISO 9660-like format).
+	(UTC time in ISO 9660-like format - also same as in the main script).
 
 4. **Filename Splitting & Prefix Check:**
 	The filename is split by the dot (.) character.
@@ -40,7 +42,7 @@
 	A new filename is built by prepending the timestamp to the remainder of the original filename.
 
 6. **Compression:**
-	The script opens the original file in binary mode, compresses its contents with Gzip (creating a new 			file with a `.gz` extension), and writes the compressed data.
+	The script opens the original file in binary mode, compresses its contents with Gzip (creating a new file with a `.gz` extension) and writes the compressed data.
 
 7. **Cleanup:**
 	After compression, the original `.log` file is deleted.
@@ -65,8 +67,10 @@
 4. **Verify the Output:**
 
 • The console should display a message indicating the file was processed.
-• The original .log file should be deleted.
-• A new compressed file with a timestamped name (and a .gz extension) should appear in the same directory.
+
+• The original `.log` file should be deleted.
+
+• A new compressed file with a timestamped name (and a `.gz` extension) should appear in the same directory.
 
 >Example **input** log:
 
