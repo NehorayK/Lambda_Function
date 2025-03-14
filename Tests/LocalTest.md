@@ -20,28 +20,28 @@
 
 - How It Works?
 
-	1. Directory Listing:
+	1. **Directory Listing:**
 		The script uses os.listdir() to iterate over all files in the specified local directory.
 
-	2. File Filtering:
+	2. **File Filtering:**
 		It processes only files that have a .log extension.
 
-	3. Timestamp Generation:
+	3. **Timestamp Generation:**
 		A timestamp is generated using datetime.utcnow().strftime('%Y-%m-%dT%H_%M_%S') (UTC time in ISO 9660-like format).
 
-	4. Filename Splitting & Prefix Check:
+	4. **Filename Splitting & Prefix Check:**
 		The filename is split by the dot (.) character. If the first part matches "1234567", the file is selected for processing.
 
-	5. New Filename Construction:
+	5. **New Filename Construction:**
 		A new filename is built by prepending the timestamp to the remainder of the original filename.
 
-	6. Compression:
+	6. **Compression:**
 		The script opens the original file in binary mode, compresses its contents with Gzip (creating a new file with a .gz extension), and writes the compressed data.
 
-	7. Cleanup:
+	7. **Cleanup:**
 		After compression, the original .log file is deleted.
 
-	8. Logging:
+	8. **Logging:**
 	Console messages are printed to show which file was processed and its new compressed name.
 
 ## Setup and Execution
