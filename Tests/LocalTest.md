@@ -1,16 +1,17 @@
-## Test Script Explanation
+## Test Script Explanation:
 
 - This test script simulates the file manipulation process locally.
   
-- It demonstrates how our mechanism:
+- It simply demonstrates how our mechanism:
   
-1. **Identifies** `.log` files in a specified directory.
+**Identifies** `.log` files in a specified directory.
 
-2. **Renames** files by prepending a UTC timestamp (formatted as `'YYYY-MM-DDTHH_MM_SS'`) to files that start with a 	specific prefix (here, `"1234567"`).
+**Renames** files by prepending a UTC timestamp (formatted as `'YYYY-MM-DDTHH_MM_SS'`) to files that start with a 	specific prefix (here, `"1234567"`).
 
-3. **Compresses** the renamed files into Gzip format `.gz`.
+**Compresses** the renamed files into Gzip format `.gz`.
 
-4. **Deletes** the original `.log` file after successful compression.
+**Deletes** the original `.log` file after successful compression.
+
 
 ## Important!
 
@@ -18,7 +19,8 @@
 
 - Once the test output is valid you can go ahead and use the [Lambda_Function.py](../Lambda_Function.py).
 
-- How It Works?
+
+## How It Works?
 
 	1. **Directory Listing:**
 		The script uses os.listdir() to iterate over all files in the specified local directory.
