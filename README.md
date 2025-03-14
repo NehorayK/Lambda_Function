@@ -35,7 +35,7 @@ This script automates the process of **compressing** and **renaming** log files 
 -  **Timestamp Creation**: Generates a unique timestamp to rename the file. *(Note: a future update might replace `datetime.utcnow()` with `datetime.now(datetime.timezone.utc)` for better support.)*
 
 -  **Vendor-Specific Prefix Check**: Verifies that the file name starts with a specific prefix, (e.g., `"1234567"` for Incapsula Cloud ID) if it does, the file being renamed with the current timestamp using python's timestamp library, for ISO 9660 format
-`'%Y-%m-%dT%H_%M_%S'`
+`'%Y-%m-%dT%H_%M_%S'`.
 
 >This step can be easily modified to suit log formats from other vendors.
 
