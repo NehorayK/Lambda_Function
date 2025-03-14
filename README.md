@@ -39,7 +39,7 @@ This script automates the process of **compressing** and **renaming** log files 
 
 >This step can be easily modified to suit log formats from other vendors.
 
--  **Compression & Update**: Compresses the file and uploads it back to S3 Bucket with a `.gz` extension, then deletes the original `.log` file (the bucket stays sorted by containing the current updated timestamp followed by `.log.gz` file extension for the SIEM Protocol identification of the file).
+-  **Compression & Update**: Compresses the file and uploads it back to S3 Bucket with a `.gz` extension, then deletes the original `.log` file (the bucket stays sorted by containing the current updated timestamp followed by `.log.gz` file extension which is necessary for the SIEM - AWS S3 Protocol identification of the file).
 
 >Example input log (being uploaded to the S3 Bucket):
 	`1234567.Generated.Gibberish.access.log`
