@@ -36,7 +36,7 @@
 
 4. **Filename Splitting & Prefix Check:**
 	The filename is split by the dot (.) character.
-	If the first part matches "1234567", the file is selected for processing.
+	If the first part matches `"1234567"`, the file is selected for processing.
 
 5. **New Filename Construction:**
 	A new filename is built by prepending the timestamp to the remainder of the original filename.
