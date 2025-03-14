@@ -28,7 +28,7 @@
 
 2. **File Filtering:**
 	It processes only files that have a `.log` extension.
-(same as in the main script - using **re** python library).
+(same as in the main script - using **re** python library to identify those files).
 
 3. **Timestamp Generation:**
 	A timestamp is generated using `datetime.utcnow().strftime('%Y-%m-%dT%H_%M_%S')`
