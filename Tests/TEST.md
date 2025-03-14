@@ -40,11 +40,11 @@ and **object key** to simulate an S3-triggered Lambda event.
 }
 ```
 
-#### cloudwatchLogs:
+### cloudwatchLogs:
 A list of log messages that might be printed during processing.
 
-#### lambdaResponse:
+### lambdaResponse:
 The JSON response returned by the Lambda function.
 
-#### s3OutputFile:
+### s3OutputFile:
 The new file name stored in S3 after processing.
