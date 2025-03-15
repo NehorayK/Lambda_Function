@@ -42,7 +42,7 @@
 	A new filename is built by prepending the timestamp to the remainder of the original filename.
 
 6. **Compression:**
-	The script opens the original file in binary mode, compresses its contents with Gzip (creating a new file with a `.gz` extension) and writes the compressed data.
+	The script opens the original file in binary mode, compresses its contents with Gzip and writes the compressed data (creating a new file with a `.gz` extension)
 
 7. **Cleanup:**
 	After compression, the original `.log` file is deleted.
