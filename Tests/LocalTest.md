@@ -6,7 +6,7 @@
   
 **Identifies** `.log` files in a specified directory.
 
-**Renames** files by prepending a UTC timestamp (formatted as `'YYYY-MM-DDTHH_MM_SS'`) to files that start with a 	specific prefix (here, `"1234567"`).
+**Renames** files by prepending a UTC timestamp (formatted as `'YYYY-MM-DDTHH_MM_SS'`) to files that start with a 	specific prefix (in this praticular example - `"1234567"`).
 
 **Compresses** the renamed files into Gzip format `.gz`.
 
