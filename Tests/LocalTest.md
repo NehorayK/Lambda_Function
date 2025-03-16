@@ -24,7 +24,7 @@
 
 1. **Directory Listing:**
 	The script uses os.listdir() to iterate over all files in the specified local directory.
-(in the main script handled with `s3_client.list_objects_v2()` to list all objects in your bucket.
+(in the main script handled with `s3_client.list_objects_v2()` to list all objects in your bucket).
 
 2. **File Filtering:**
 	It processes only files that have a `.log` extension.
