@@ -21,9 +21,9 @@ It’s designed to help you save storage space and manage your logs chronologica
 
 - [Welcome contributors 🤝](#Welcome-contributors-)
 
-- [Testing the Bucket](Tests/TEST.md)
+- [Testing the Bucket 🪣](Tests/TEST.md)
   
-- [Testing Script For Local Validation](Tests/LocalTest.md)
+- [Testing Script For Local Validation 🧪](Tests/LocalTest.md)
 
 
 ## How It Works ⚙️
