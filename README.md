@@ -5,7 +5,7 @@ Welcome to the AWS Lambda Log Compression and rename project tailored for Incaps
 This script automates the process of **compressing** and **renaming** log files stored in an S3 bucket.
 It’s designed to help you save storage space and manage your logs chronological order more efficiently while keeping things simple and precise for the SIEM pulling the logs.
 
->  **Note:** Although this script is specifically designed for handling Incapsula log files (using a specific account/tenant ID prefix), you can easily modify it for other vendors by adjusting the **file prefix** and **regex pattern**.
+>  **Note:** Although this script is specifically designed for handling Incapsula log files (using a specific account/tenant ID prefix), you can easily modify it for other vendors by adjusting the **file prefix** and **regex pattern** variables.
 
 ## Table of Contents 📑
 
