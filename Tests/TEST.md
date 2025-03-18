@@ -37,6 +37,7 @@
 "s3OutputFile": "2025-03-13T10_15_00.Generated.Gibberish.access.log.gz"
 }
 ```
+## Explanation:
 
 ### cloudwatchLogs:
 A list of log messages that might be printed during processing.
@@ -45,4 +46,4 @@ A list of log messages that might be printed during processing.
 The JSON response returned by the Lambda function.
 
 ### s3OutputFile:
-The new file name stored in S3 after processing.
+The new file name stored in the S3 Bucket after processing it.
