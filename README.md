@@ -23,7 +23,7 @@ It’s designed to help you save storage space and manage your logs chronologica
 
 - [Testing the Bucket 🪣](Tests/TEST.md)
   
-- [Testing Script For Local Validation 🧪](Tests/LocalTest.py)
+- [Testing Script For Validation in local OS 🧪](Tests/LocalTest.py)
 
 
 ## How It Works ⚙️
