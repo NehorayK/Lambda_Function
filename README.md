@@ -38,8 +38,7 @@ It’s designed to help you save storage space and manage your logs chronologica
 
 -  **File Retrieval**: Your SIEM should be configured to actively fetch logs from your S3 Bucket using AWS S3 REST API Protocol.
 
--  **Timestamp Creation**: Generates a unique (current) timestamp to rename each file that starts
-   with `1234567` (replacing it with the current timestmap in UTC).
+-  **Timestamp Creation**: Generates a unique (current) timestamp to rename each file which matches the `**regex_pattern**` and the `**file_name_parts[0]**`.
 
 >A future update might replace `datetime.utcnow()` with `datetime.now(datetime.timezone.utc)` for better support.
 
