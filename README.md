@@ -38,7 +38,9 @@ It’s designed to help you save storage space and manage your logs chronologica
 
 -  **File Retrieval**: Your SIEM should be configured to actively fetch logs from your S3 Bucket using AWS S3 REST API Protocol.
 
--  **Timestamp Creation**: Generates a unique timestamp to rename the file.
+-  **Timestamp Creation**: Generates a unique (current) timestamp to rename each file that starts
+   with `1234567` (replacing it with the current timestmap in UTC).
+
 >A future update might replace `datetime.utcnow()` with `datetime.now(datetime.timezone.utc)` for better support.
 
 -  **Vendor-Specific Prefix Check**: Verifies that the file name starts with a specific prefix, (e.g., `"1234567"` for Incapsula Cloud ID) if it does, the file being renamed with the current timestamp using python's timestamp library, for ISO 9660 format
